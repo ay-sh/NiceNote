@@ -1,8 +1,9 @@
 .taskContainer{
-    max-width: 32rem;
+    min-width: 32rem;
+    width: 38rem;
 
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 
     padding: 0.8em;
     margin: 0.4em;

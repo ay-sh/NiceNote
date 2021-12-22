@@ -1,7 +1,7 @@
 import moment from 'moment';
 import './App.css';
 
-import Task from './components/Task';
+import TaskList from './components/TaskList';
 
 
 /*
@@ -17,19 +17,26 @@ function App() {
   }
 
   const sampleTasks = [{
-    title: "Go for a walk",
-    createdAt: moment().format('MMM Do YYYY'),
-    status: statusEnum.STATUS_PENDING,
-  },{
-    title: "Do other work",
-    createdAt: moment().add(2,'d').format('MMM Do YYYY'),
-    status: statusEnum.STATUS_DONE
-  }] 
+    taskListTitle:"Work",
+    taskListSize: 2,
+    tasks: [{
+      title: "Go for a walk",
+      createdAt: moment().format('MMM Do YYYY'),
+      status: statusEnum.STATUS_PENDING,
+    },{
+      title: "Do other work",
+      createdAt: moment().add(2,'d').format('MMM Do YYYY'),
+      status: statusEnum.STATUS_DONE
+    },{
+      title: "Do other work",
+      createdAt: moment().add(2,'d').format('MMM Do YYYY'),
+      status: statusEnum.STATUS_DONE
+    }]
+  }]
 
   return (
     <div className="App">
-      <Task taskData={sampleTasks[0]}/>
-      <Task taskData={sampleTasks[1]}/>
+      <TaskList taskListData={sampleTasks[0]}/>
     </div>
   );
 }

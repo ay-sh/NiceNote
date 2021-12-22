@@ -1,0 +1,51 @@
+.taskListContainer{
+    position:relative;
+    width: 45rem;
+
+    margin: 1em;
+    padding: 0.5em;
+
+    border: 1px solid #274472;
+    border-radius: 5px;
+}
+
+
+.taskListContainer__title{
+    font-size:2.1rem;
+    font-weight: bold;
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+.taskListContainer__addbtn{
+    position:absolute;
+
+    top: 1.2rem;
+    left: 75%;
+
+    width: 6rem;
+    height: 3rem;
+
+    cursor:pointer;
+}
+
+.taskListContainer__taskcont{
+    max-height: 42rem;
+    overflow-y: scroll;
+}
+
+.taskListContainer__taskcont::-webkit-scrollbar {
+    width: 1rem;
+}
+
+.taskListContainer__taskcont::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+.taskListContainer__taskcont::-webkit-scrollbar-thumb {
+    background: #888;
+}
+  
+.taskListContainer__taskcont::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
