@@ -1,6 +1,9 @@
 .App {
   width:inherit;
   height: 100%;
+
+  /* temporary css only to avoid margin collapsing */
+  padding: 0.05px;
 }
 
 

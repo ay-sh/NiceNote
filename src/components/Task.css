@@ -30,7 +30,7 @@
     font-size: 1.4rem;
 }
 
-.taskContainer__finishbtn{
+.taskContainer__btn{
     /* margin-left: 1em; */
     align-self: center;
 
@@ -40,21 +40,61 @@
     border-radius: 50%;
     border: 2px solid black;    
 
-    background-color: #fff;
-    color: #41729F;
-
     cursor: pointer;
 
     transition: background-color 0.5s, color 0.2s;
+}
+
+.finishbtnStyle{
+    background-color: #41729F;
+    color:#fff;
+}
+
+.finishbtnStyle:hover{
+    box-shadow: 1px 0px 3px 2px #41729F;
+}
+
+.normalbtnStyle{
+    background-color: #fff;
+    color: #41729F
+}
+
+.normalbtnStyle:hover{
+    background-color: #41729F;
+    color:#fff;
+
+    border:none;
+
 }
 
 .translateLeft__16--modifier{
     transform:translateX(-1.6rem);
 }
 
-.taskContainer__finishbtn:hover{
-    background-color: #41729F;
-    color: #fff;
+.titleStrikethrough{
+    display: inline-block;
+	position: relative;
+	transition: all 0.5s cubic-bezier(.55, 0, .1, 1);
+}
 
-    border: none;
+.titleStrikethroughDone:after {
+	content: '';
+	position: absolute;
+	display: block;
+	width: 100%;
+	height: 2px;
+	box-shadow: 0 1px rgba(255,255,255,0.6);
+	margin-top: -0.6em;
+	background: black;
+	transform-origin: center left;
+	animation: strikethrough 0.4s 0s cubic-bezier(.55, 0, .1, 1) 1;
+}
+
+@keyframes strikethrough {
+	from {
+		transform: scaleX(0);
+	}
+	to {
+		transform: scaleX(1);
+	}
 }
