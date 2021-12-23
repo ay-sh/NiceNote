@@ -1,0 +1,23 @@
+.addTaskContainer{
+    border-left: 1px solid #274472;
+    border-right: 1px solid #274472;
+
+    width: fit-content;
+
+    padding: 0.6em;
+    margin:0.4em;
+    /* align-self: center; */
+    align-self: flex-start;
+}
+
+.addTaskContainer__inputbox{
+    min-width: 28rem;
+    padding: 0.5rem;
+
+    margin-right: 2rem;
+}
+
+.addTaskContainer__addbtn{
+    width: 6rem;
+    height:3rem;
+}

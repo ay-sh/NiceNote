@@ -1,4 +1,6 @@
 .taskListContainer{
+    display: flex;
+    flex-direction: column;
     position:relative;
     width: 45rem;
 
@@ -27,6 +29,17 @@
     height: 3rem;
 
     cursor:pointer;
+}
+
+.taskListContainer__addmenucontainer{
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-out;
+}
+
+.menuOpen{
+    /* calculated height :) */
+    max-height: 6.1rem;
 }
 
 .taskListContainer__taskcont{
